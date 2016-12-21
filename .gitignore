@@ -1,7 +1,11 @@
 NetLibrary/kidd.Common/[Bb]in
 NetLibrary/kidd.Common/[Oo]bj
-
 NetLibrary/kidd.Common.Test/App.config
 NetLibrary/kidd.Common.Test/[Bb]in
 NetLibrary/kidd.Common.Test/[Oo]bj
-
+NetLibrary/kidd.Web/[Bb]in
+NetLibrary/kidd.Web/[Oo]bj
+NetLibrary/kidd.Web.Test/App.config
+NetLibrary/kidd.Web.Test/[Bb]in
+NetLibrary/kidd.Web.Test/[Oo]bj
+NetLibrary/packages/*
