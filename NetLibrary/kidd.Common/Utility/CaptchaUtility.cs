@@ -9,8 +9,16 @@ using System.Text;
 
 namespace kidd.Common.Utility
 {
+    /// <summary>
+    /// 驗證碼產生器
+    /// </summary>
     public static class CaptchaUtility
     {
+        /// <summary>
+        /// 傳入指定字串，產生驗證碼圖片檔案位元組
+        /// </summary>
+        /// <param name="captcha"></param>
+        /// <returns></returns>
         public static byte[] CreateCaptchaImage(string captcha)
         {
             Random rando = new Random();
@@ -60,6 +68,10 @@ namespace kidd.Common.Utility
         }
 
 
+        /// <summary>
+        /// 隨機產生一個花紋樣式
+        /// </summary>
+        /// <returns></returns>
         public static HatchStyle CreateRandomHatchStyle()
         {
             IEnumerator enumerator;

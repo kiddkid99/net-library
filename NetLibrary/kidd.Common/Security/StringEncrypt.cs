@@ -76,6 +76,11 @@ namespace kidd.Common.Security
             }
         }
 
+        /// <summary>
+        /// 使用 MD5 加密演算法加密字串
+        /// </summary>
+        /// <param name="source"></param>
+        /// <returns></returns>
         public static string Md5Encrypt(string source)
         {
             using (MD5CryptoServiceProvider md5Hash = new MD5CryptoServiceProvider())

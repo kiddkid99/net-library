@@ -20,7 +20,7 @@ namespace kidd.Common.Security
         }
 
         /// <summary>
-        /// Remove Sqlij
+        /// 移除 SQL 相關指令關鍵字
         /// </summary>
         /// <param name="source"></param>
         /// <returns></returns>

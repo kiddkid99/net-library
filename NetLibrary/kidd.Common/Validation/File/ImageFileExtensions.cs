@@ -5,6 +5,9 @@ using System.Text;
 
 namespace kidd.Common.Validation.File
 {
+    /// <summary>
+    /// 圖片類型副檔名驗證
+    /// </summary>
     public class ImageFileExtensions : IFileExtensions
     {
 
