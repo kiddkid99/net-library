@@ -42,9 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\DbAccess.cs" />
-    <Compile Include="Function\TableSorting.cs" />
+    <Compile Include="Database\TableSorting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Security\StringEncrypt.cs" />
+    <Compile Include="Security\StringEncrypt.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Security\StringFilter.cs" />
     <Compile Include="Security\StringMask.cs" />
     <Compile Include="Sender\EmailSender.cs" />

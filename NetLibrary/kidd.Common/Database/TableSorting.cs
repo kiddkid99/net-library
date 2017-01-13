@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace kidd.Common.Function
+namespace kidd.Common.Database
 {
     /// <summary>
     /// 資料排序模組功能。

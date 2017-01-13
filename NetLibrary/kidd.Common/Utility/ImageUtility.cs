@@ -34,7 +34,7 @@ namespace kidd.Common.Utility
         /// <param name="width">寬度</param>
         /// <param name="height">高度</param>
         /// <returns>裁切後的新圖片，統一將圖片轉成 32 位元色階</returns>
-        public static Bitmap CropImage(Bitmap sourceImage, int x, int y, int width, int height)
+        public static Bitmap Crop(Bitmap sourceImage, int x, int y, int width, int height)
         {
             //建立新圖片，預設使用 32 位元色階，才可以在 graphic 上畫圖。
             Bitmap result = new Bitmap(width, height);
@@ -59,7 +59,7 @@ namespace kidd.Common.Utility
         /// <param name="quality">壓縮品質，1 ~ 100，越高品質越好，壓縮率越低。</param>
         /// <param name="filePath">儲存檔案路徑</param>    
         /// <param name="force">強制轉換</param>
-        public static void RatioResizeAndSave(Bitmap sourceImage, int maxWidth, int maxHeight, int quality, string filePath, bool force)
+        private static void RatioResizeAndSave(Bitmap sourceImage, int maxWidth, int maxHeight, int quality, string filePath, bool force)
         {
             // 取得圖片原始寬高。
             int originalWidth = sourceImage.Width;
@@ -93,7 +93,7 @@ namespace kidd.Common.Utility
         /// <param name="newHeight"></param>
         /// <param name="quality"></param>
         /// <param name="filePath"></param>
-        public static void ResizeAndSave(Bitmap sourceImage, int newWidth, int newHeight, int quality, string filePath)
+        private static void ResizeAndSave(Bitmap sourceImage, int newWidth, int newHeight, int quality, string filePath)
         {
             // Convert other formats (including CMYK) to RGB.
             Bitmap newImage = Resize(sourceImage, newWidth, newHeight);
@@ -170,7 +170,7 @@ namespace kidd.Common.Utility
         /// <param name="sourceImage">圖片</param>
         /// <param name="filePath">檔案絕對路徑</param>
         /// <param name="quality">壓縮品質，1 ~ 100，越高品質越好，壓縮率越低。</param>
-        public static void SaveImage(Bitmap image, string filePath, int quality)
+        private static void SaveImage(Bitmap image, string filePath, int quality)
         {
             //TODO:儲存圖片操作，應該移至到負責處理檔案的類別
             //依副檔名取得 ImageFormat
