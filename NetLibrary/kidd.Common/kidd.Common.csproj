@@ -54,16 +54,17 @@
     <Compile Include="Utility\ConvertUtility.cs" />
     <Compile Include="Utility\EnumUtility.cs" />
     <Compile Include="Utility\FileUtility.cs" />
+    <Compile Include="Utility\HttpRequestUtility.cs" />
     <Compile Include="Utility\ImageUtility.cs" />
     <Compile Include="Utility\RandomUtility.cs" />
     <Compile Include="Validation\File\FileValidation.cs" />
     <Compile Include="Validation\File\IFileExtensions.cs" />
     <Compile Include="Validation\File\ImageFileExtensions.cs" />
-    <Compile Include="Validation\Format\EmailFormatValidation.cs" />
-    <Compile Include="Validation\Format\IdFormatValidation.cs" />
-    <Compile Include="Validation\Format\IFormatValidation.cs" />
-    <Compile Include="Validation\Format\MobileFormatValidation.cs" />
-    <Compile Include="Validation\Format\TelephoneFormatValidation.cs" />
+    <Compile Include="Validation\Custom\EmailFormatValidation.cs" />
+    <Compile Include="Validation\Custom\IdFormatValidation.cs" />
+    <Compile Include="Validation\Custom\ICustomValidation.cs" />
+    <Compile Include="Validation\Custom\MobileFormatValidation.cs" />
+    <Compile Include="Validation\Custom\TelephoneFormatValidation.cs" />
     <Compile Include="Validation\RangeValidation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

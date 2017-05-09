@@ -1,5 +1,5 @@
 ﻿using kidd.Common.Validation.File;
-using kidd.Common.Validation.Format;
+using kidd.Common.Validation.Custom;
 using kidd.Web.Common;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -388,7 +388,7 @@ namespace gb.Web.Test
 
             //Act
             RequestWrapper wrapper = new RequestWrapper(request.Object);
-            wrapper.FormatValidate(new EmailFormatValidation(), value, true, field);
+            wrapper.CustomValidate(new EmailFormatValidation(), value, true, field);
             var result = wrapper.GetErrorMessage(ErrorOuputType.Text);
 
             //Assert

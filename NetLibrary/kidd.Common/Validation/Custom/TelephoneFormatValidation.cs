@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace kidd.Common.Validation.Format
+namespace kidd.Common.Validation.Custom
 {
     /// <summary>
     /// 電話格式驗證
     /// 可接受的格式範例 "02-2550-9196", "(02)25509196", "0225509196", "02-25509196", "(02)2550-9196"
     /// </summary>
-    public class TelephoneFormatValidation : IFormatValidation
+    public class TelephoneFormatValidation : ICustomValidation
     {
         public bool Validate(string value)
         {

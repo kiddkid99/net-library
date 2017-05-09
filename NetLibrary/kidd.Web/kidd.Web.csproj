@@ -45,6 +45,7 @@
     <Compile Include="Common\PageSort.cs" />
     <Compile Include="Common\RequestWrapper.cs" />
     <Compile Include="Common\ResponseWrapper.cs" />
+    <Compile Include="Common\SessionMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

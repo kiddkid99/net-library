@@ -1,7 +1,7 @@
 ﻿using kidd.Common.Utility;
 using kidd.Common.Validation;
 using kidd.Common.Validation.File;
-using kidd.Common.Validation.Format;
+using kidd.Common.Validation.Custom;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -264,9 +264,9 @@ namespace kidd.Web.Common
         /// <param name="value">資料</param>
         /// <param name="ignoreEmpty">是否忽略驗證空白資料</param>
         /// <param name="field">顯示欄位</param>
-        public void FormatValidate(IFormatValidation format, string value, bool ignoreEmpty, string field)
+        public void CustomValidate(ICustomValidation format, string value, bool ignoreEmpty, string field)
         {
-            FormatValidate(format, value, ignoreEmpty, field, "{0}格式不正確");
+            CustomValidate(format, value, ignoreEmpty, field, "{0}格式不正確");
         }
 
 
@@ -278,7 +278,7 @@ namespace kidd.Web.Common
         /// <param name="ignoreEmpty">是否忽略驗證空白資料</param>
         /// <param name="field">顯示欄位</param>
         /// <param name="messageFormat">錯誤訊息字串格式, {0} 為顯示欄位</param>
-        public void FormatValidate(IFormatValidation format, string value, bool ignoreEmpty, string field, string messageFormat)
+        public void CustomValidate(ICustomValidation format, string value, bool ignoreEmpty, string field, string messageFormat)
         {
             if (!ignoreEmpty || !String.IsNullOrWhiteSpace(value))
             {

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace kidd.Common.Validation.Format
+namespace kidd.Common.Validation.Custom
 {
     /// <summary>
     /// 台灣身分證字號驗證
     /// </summary>
-    public class IdFormatValidation : IFormatValidation
+    public class IdFormatValidation : ICustomValidation
     {
         public bool Validate(string value)
         {

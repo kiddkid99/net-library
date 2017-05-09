@@ -1,4 +1,4 @@
-﻿using kidd.Common.Validation.Format;
+﻿using kidd.Common.Validation.Custom;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace gb.Share.Test
@@ -15,7 +15,7 @@ namespace gb.Share.Test
             bool expected = true;
 
             //Act
-            IFormatValidation format = new MobileFormatValidation();
+            ICustomValidation format = new MobileFormatValidation();
             bool result = format.Validate(test);
 
             //Assert
@@ -31,7 +31,7 @@ namespace gb.Share.Test
             bool expected = false;
 
             //Act
-            IFormatValidation format = new MobileFormatValidation();
+            ICustomValidation format = new MobileFormatValidation();
             bool result = format.Validate(test);
 
             //Assert
@@ -47,7 +47,7 @@ namespace gb.Share.Test
             bool expected = true;
 
             //Act
-            IFormatValidation format = new EmailFormatValidation();
+            ICustomValidation format = new EmailFormatValidation();
             bool result = format.Validate(test);
 
             //Assert
@@ -63,7 +63,7 @@ namespace gb.Share.Test
             bool expected = false;
 
             //Act
-            IFormatValidation format = new EmailFormatValidation();
+            ICustomValidation format = new EmailFormatValidation();
             bool result = format.Validate(test);
 
             //Assert
@@ -79,7 +79,7 @@ namespace gb.Share.Test
             bool expected = true;
 
             //Act
-            IFormatValidation format = new TelephoneFormatValidation();
+            ICustomValidation format = new TelephoneFormatValidation();
             bool result = true;
             foreach (var value in array)
             {
@@ -104,7 +104,7 @@ namespace gb.Share.Test
             bool expected = true;
 
             //Act
-            IFormatValidation format = new TelephoneFormatValidation();
+            ICustomValidation format = new TelephoneFormatValidation();
             bool result = true;
             foreach (var value in array)
             {
@@ -132,7 +132,7 @@ namespace gb.Share.Test
             bool expected = true;
 
             //Act
-            IFormatValidation format = new IdFormatValidation();
+            ICustomValidation format = new IdFormatValidation();
             bool result = format.Validate(test);
 
             //Assert
@@ -148,7 +148,7 @@ namespace gb.Share.Test
             bool expected = false;
 
             //Act
-            IFormatValidation format = new IdFormatValidation();
+            ICustomValidation format = new IdFormatValidation();
             bool result = format.Validate(test);
 
             //Assert

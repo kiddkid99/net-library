@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace kidd.Common.Validation.Format
+namespace kidd.Common.Validation.Custom
 {
     /// <summary>
     /// 電子郵件驗證
     /// </summary>
-    public class EmailFormatValidation : IFormatValidation
+    public class EmailFormatValidation : ICustomValidation
     {
         public bool Validate(string value)
         {
